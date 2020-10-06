@@ -1,5 +1,5 @@
 .formInput {
-  padding-top: 12rem;
+  padding-top: 5rem;
   width: 60%;
   margin: auto;
   text-align: center;
@@ -26,15 +26,19 @@
       transition-property: background-color;
       transition-duration: 0.4s;
       transition-timing-function: ease-in-out;
+      color: #757575;
       &::placeholder{
         font-size: 1.5rem;
         text-align: center;
       }
       &:hover, &:focus, &:valid{
         background-color: transparent;
-        color: #BDCEE2;
         cursor: pointer;
         border: 1px solid #BDCEE2;
+        color: #BDCEE2;
+        &::placeholder{
+          color: #BDCEE2;
+        }
       }
     }
     &__submit {

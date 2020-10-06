@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Container } from 'semantic-ui-react';
-import FormInput from '../FormInput/formInput';
+
 import './header.scss';
 
 const Header = () => (
@@ -20,8 +20,6 @@ const Header = () => (
       </Grid.Column>
     </Grid.Row>
     </Grid>
-      <FormInput />
-      
   </div>
 );
 
