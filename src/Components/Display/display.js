@@ -4,7 +4,6 @@ import Statistiques from '../../containers/statistiques';
 import './display.scss';
 
 const Display = ({isValide}) => {
-  console.log(isValide)
   return(
     <div className="display">
       {isValide? <Statistiques /> : <FormInput />} 

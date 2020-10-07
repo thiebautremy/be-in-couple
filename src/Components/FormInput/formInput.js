@@ -1,5 +1,6 @@
 import React from 'react';
 import './formInput.scss';
+import moment from 'moment';
 
 const FormInput = ({
   firstFirstName,
@@ -34,6 +35,11 @@ const FormInput = ({
     handleChangeDate(e.target.value)
     
   }
+  // TRANSFORMATION DU FORMAT DE LA DATE DU JOUR POUR LE METTRE EN PARAMETRE MAX DU CALENDRIER
+  const day = moment(Date.now()).format('DD')
+  const month = moment(Date.now()).format('M');
+  const year = moment(Date.now()).format('YYYY');
+  const maxDate = `${year}-${month}-${day}`
   return(
     <div className="formInput">
     <h1 className="formInput__title">Renseignez les deux prénoms qui composent le couple</h1>
@@ -69,7 +75,7 @@ const FormInput = ({
         required
         value={date}
         onChange={handleOnChangeDate}
-        // max= {`${today}`}
+        max= {`${maxDate}`}
         />
       <div className="formInput__form__submit">
         <button type="submit" >Envoyer</button>

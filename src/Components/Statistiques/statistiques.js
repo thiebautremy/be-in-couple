@@ -10,6 +10,7 @@ const Statistiques = ({
   const handleOnBack = () => {
     handleBack();
   }
+  // POUR SEPARER TOUS LES 3 CHIFFRES LE NOMBRE : String(n).replace(/(.)(?=(\d{3})+$)/g,'$1,')
   return(
   <div className="statistiques">
     <section className="statistiques__section">
@@ -31,7 +32,7 @@ const Statistiques = ({
       <h2 className="statistiques__section__item">Vous avez partagé environ <span>{parseInt(days * 2)} repas</span>.
       </h2>
       {/* NOMBRE DE CINEMA */}
-      <h2 className="statistiques__section__item">Vous êtes allés au cinéma ensemble environ <span>{parseInt(days / 364 *1.7)}fois</span>.
+      <h2 className="statistiques__section__item">Vous êtes allés au cinéma ensemble environ <span>{parseInt(days / 364 *1.7)} fois</span>.
       </h2>
       {/* NOMBRE DE RESTO */}
       <h2 className="statistiques__section__item">Vous êtes allés au resto ensemble environ <span>{parseInt(days / 30 * 0.7)} fois</span>.
