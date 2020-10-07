@@ -3,12 +3,13 @@ import FormInput from '../../containers/formInput';
 import Statistiques from '../../containers/statistiques';
 import './display.scss';
 
-const Display = () => {
+const Display = ({isValide}) => {
+  console.log(isValide)
   return(
-  <div className="display">
-      <FormInput />
-      <Statistiques />
-  </div>
-);}
+    <div className="display">
+      {isValide? <Statistiques /> : <FormInput />} 
+    </div>
+  )
+}
 
-export default Display;
+export default Display; 

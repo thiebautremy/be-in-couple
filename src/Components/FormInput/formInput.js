@@ -8,6 +8,7 @@ const FormInput = ({
   handleChange,
   handleChangeDate,
   handleChangeDays,
+  handleIsValidate,
 }) => {
   
   const handleOnSubmit = (e) => {
@@ -19,6 +20,7 @@ const FormInput = ({
     const dateTimeStamp = Date.parse(date);
     const diff = ((now - dateTimeStamp) / 1000 / 86400);
     handleChangeDays(parseInt(diff, 10));
+    handleIsValidate();
   }
 
   const handleOnChange = (e) => {
@@ -34,14 +36,14 @@ const FormInput = ({
   }
   return(
     <div className="formInput">
-    <h1 className="formInput__title">Renseigner les deux prénoms qui composent le couple</h1>
+    <h1 className="formInput__title">Renseignez les deux prénoms qui composent le couple</h1>
     <form action="" className="formInput__form" onSubmit={handleOnSubmit}>
       <div className="formInput__form__inputs">
         <input 
           type="text" 
           name="firstFirstName" 
           id="firstFirstName" 
-          placeholder="Prénom premier partenaire"
+          placeholder="Prénom monsieur"
           className="formInput__form__input"
           required 
           value={firstFirstName}
@@ -51,14 +53,14 @@ const FormInput = ({
           type="text" 
           name="secondFirstName" 
           id="secondFirstName"
-          placeholder="Prénom second partenaire"
+          placeholder="Prénom madame"
           className="formInput__form__input"
           required
           value={secondFirstName}
           onChange={handleOnChange} 
         />
       </div>
-      <h1 className="formInput__title">Renseigner le début de votre relation</h1>
+      <h1 className="formInput__title">Renseignez le début de votre relation</h1>
       <input 
         type="date" 
         name="date" 

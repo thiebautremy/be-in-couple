@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Header/header';
-import Display from '../Display/display';
+import Display from '../../containers/display';
 import Footer from '../Footer/footer';
 // import { Container } from 'react-bootstrap';
 import { Container } from 'semantic-ui-react';

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import FormInput from '../Components/FormInput/formInput';
-import { changeValue, changeDate, changeDays } from '../actions/app';
+import { changeValue, changeDate, changeDays, changeIsValidate } from '../actions/app';
 
 const mapStateToProps = (state) => ({
   firstFirstName : state.firstFirstName,
@@ -18,6 +18,9 @@ const mapDispatchToProps = (dispatch) => ({
   handleChangeDays: (value) => {
     dispatch(changeDays(value))
   },
+  handleIsValidate: () => {
+    dispatch(changeIsValidate())
+  }
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(FormInput);
