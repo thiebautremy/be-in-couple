@@ -43,6 +43,10 @@ const beInLove = (state = initialState, action= {}) => {
     case GO_BACK: {
       return {
         ...state,
+        firstFirstName: '',
+        secondFirstName: '',
+        date: '',
+        days: '',
         isValide: false,
       }
     }

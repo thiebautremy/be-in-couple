@@ -27,7 +27,7 @@ const FormInput = ({
   const handleOnChange = (e) => {
     const value = e.target.value;
     const name = e.target.name;
-    handleChange(value,name);
+    handleChange(value.toUpperCase(),name);
   }
 
   const handleOnChangeDate = (e) => {
@@ -49,7 +49,7 @@ const FormInput = ({
           type="text" 
           name="firstFirstName" 
           id="firstFirstName" 
-          placeholder="Prénom monsieur"
+          placeholder="1er Prénom"
           className="formInput__form__input"
           required 
           value={firstFirstName}
@@ -59,7 +59,7 @@ const FormInput = ({
           type="text" 
           name="secondFirstName" 
           id="secondFirstName"
-          placeholder="Prénom madame"
+          placeholder="2ième Prénom"
           className="formInput__form__input"
           required
           value={secondFirstName}

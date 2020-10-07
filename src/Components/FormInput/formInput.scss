@@ -3,6 +3,8 @@
   width: 60%;
   margin: auto;
   text-align: center;
+  position: relative;
+  z-index: 3;
   animation: fadein 3s;
   -moz-animation: fadein 3s; /* Firefox */
   -webkit-animation: fadein 3s; /* Safari et Chrome */
