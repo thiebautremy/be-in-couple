@@ -5,13 +5,16 @@ import App from '../src/Components/App/App';
 import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 import 'moment/locale/fr';
 
 import store from './store/store';
 const rootReactElement = (
   
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
 );
 const target = document.getElementById('root')
