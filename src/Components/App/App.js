@@ -17,6 +17,7 @@ function App() {
       <Route path="/legalMentions" exact>
         <Header />
         <LegalMentions />
+        <Footer />
       </Route>
     </div>
   );

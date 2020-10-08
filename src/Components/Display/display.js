@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import FormInput from '../../containers/formInput';
 import Statistiques from '../../containers/statistiques';
 import Particles from 'react-particles-js';
@@ -58,4 +59,7 @@ const Display = ({isValide}) => {
   )
 }
 
+Display.propTypes = {
+  isValide: PropTypes.bool.isRequired,
+}
 export default Display; 

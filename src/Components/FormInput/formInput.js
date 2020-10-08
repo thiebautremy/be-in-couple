@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './formInput.scss';
 import moment from 'moment';
 
@@ -14,9 +15,6 @@ const FormInput = ({
   
   const handleOnSubmit = (e) => {
     e.preventDefault()
-    console.log(`firstFirstName: ${firstFirstName}`)
-    console.log(`secondFirstName: ${secondFirstName}`)
-    console.log(`date: ${date}`)
     const now = Date.now();
     const dateTimeStamp = Date.parse(date);
     const diff = ((now - dateTimeStamp) / 1000 / 86400);
@@ -31,7 +29,6 @@ const FormInput = ({
   }
 
   const handleOnChangeDate = (e) => {
-    console.log(e.target.value)
     handleChangeDate(e.target.value)
     
   }
@@ -78,10 +75,18 @@ const FormInput = ({
         max= {`${maxDate}`}
         />
       <div className="formInput__form__submit">
-        <button type="submit" >Envoyer</button>
+        <button type="submit" >Calculer</button>
       </div>
     </form>
     </div>
 );}
-
+FormInput.propTypes = {
+  firstFirstName: PropTypes.string.isRequired,
+  secondFirstName: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  handleChangeDate: PropTypes.func.isRequired,
+  handleChangeDays: PropTypes.func.isRequired,
+  handleIsValidate: PropTypes.func.isRequired,
+}
 export default FormInput;

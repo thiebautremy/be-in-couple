@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './statistiques.scss';
 
 const Statistiques = ({
@@ -10,7 +11,7 @@ const Statistiques = ({
   const handleOnBack = () => {
     handleBack();
   }
-  // POUR SEPARER TOUS LES 3 CHIFFRES LE NOMBRE : String(n).replace(/(.)(?=(\d{3})+$)/g,'$1,')
+  
   return(
   <div className="statistiques">
     <section className="statistiques__section">
@@ -44,5 +45,7 @@ const Statistiques = ({
     <button type="button" onClick={handleOnBack} className="statistiques__btn">Retour</button>
   </div>
 );}
-
+Statistiques.propTypes = {
+  handleBack: PropTypes.func.isRequired,
+}
 export default Statistiques;

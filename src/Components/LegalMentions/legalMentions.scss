@@ -1,0 +1,51 @@
+.legalMentions {
+  background: linear-gradient( 180deg, rgb(0, 0, 0) 0%, rgb(0,51,102) 86%, rgb(0,51,102) 100%);
+  position: relative;
+  height: 50rem;
+  z-index: 1;
+  padding: 3rem;
+  &__particles {
+    position: absolute;
+    width: 100%;
+    height: 50rem;
+    top:0;
+    left:0;
+    z-index:2;
+  }
+  & article, button {
+    position: relative;
+    z-index: 3;
+  }
+  & h1 {
+    color: #66A599;
+  }
+  & h2 {
+    margin-left: 2rem;
+    color: #66A599;
+  }
+  & p {
+    margin-left: 3rem;
+    color: #BDCEE2;
+  }
+  & button {
+    display: block;
+    padding: 0.5rem;
+    margin: 3rem 0rem auto auto;
+    width: 30%;
+    height: 2.5rem;
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    border: none;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      background-color: transparent;
+      color: #BDCEE2;
+      cursor: pointer;
+      border: 1px solid #BDCEE2;
+    }
+  }
+}
