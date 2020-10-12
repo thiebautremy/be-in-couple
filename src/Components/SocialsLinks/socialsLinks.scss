@@ -52,3 +52,30 @@
     }
   }
 }
+
+@media (max-width: 800px){
+  .socialsLinks {  
+    display: flex;
+    & h2 {
+      font-size: 1rem;
+      padding: 0rem;
+    }
+    &__link {
+      background-color:rgba(0,51,102, 0);
+      border-radius: 50%;
+      margin-right: 1.5rem;
+      height: 6rem;
+      width: 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  html body div#root div.App div.footer div.socialsLinks div.socialsLinks__link a i.linkedin.huge.icon {
+    font-size: 2em;
+  }
+  html body div#root div.App div.footer div.socialsLinks div.socialsLinks__link a i.instagram.huge.icon {
+    font-size: 2em;
+  }
+}
