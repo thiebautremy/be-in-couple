@@ -23,7 +23,7 @@ const FormInput = ({
   }
 
   const handleOnChange = (e) => {
-    const value = e.target.value;
+    const value = (e.target.value).toString();
     const name = e.target.name;
     handleChange(value.toUpperCase(),name);
   }
