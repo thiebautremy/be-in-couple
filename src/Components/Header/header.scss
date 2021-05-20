@@ -1,28 +1,31 @@
 .header {
-  height: 52rem;
   background-image: url('../../assets/bg.webp');
   background-position: 50% 100%;
   background-size: cover;
-  position: relative;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
   &__title {
-    font-size: 8vw;
+    display: none;
+    padding: 5rem 2rem;
+    // flex: 50%;
+    font-size: 7rem;
     color: rgb(240, 244, 245);
     text-shadow: -9px 13px 8px rgba(0, 0, 0, 1);
-    position: absolute;
-    left: 5rem;
-    top: 12rem;
+    // display: inline-block;
     & span {
       color: #BDCEE2;
       display: block;
     }  
   }
   &__infos {
-    position: absolute;
-    right: 2rem;
-    top: 20rem;
+    text-align: end;
+    padding-right: 2rem;
+    display: inline-block;
+    // flex: 50%;
     text-shadow: 13px 9px 8px rgba(0, 0, 0, 1);
     color: #F0F4F5;
-    font-size: 2vw;
+    font-size: 2rem;
     & span {
       color: #BDCEE2;
     }
@@ -30,55 +33,58 @@
 }
 
 
-@media (max-width: 1200px ) {
+@media (min-width: 1200px ) {
   .header {
+    &__title {
+      display: block;
+    }
     height: 40rem;
   }
 }
-@media (max-width: 600px ) {
-  .header {
-    height: 30rem;
-    &__infos {
-      top: 15rem;
-      font-size: 2.5vw;
-    }
-  }
-}
+// @media (max-width: 600px ) {
+//   .header {
+//     height: 30rem;
+//     &__infos {
+//       top: 15rem;
+//       //font-size: 2.5vw;
+//     }
+//   }
+// }
 
-@media (max-width: 450px ) {
-  .header {
-    height: 20rem;
-    background-image: url('../../assets/bg.webp');
-    background-position: 50% 100%;
-    background-size: cover;
-    position: relative;
-    &__title {
-      font-size: 8vw;
-      color: rgb(240, 244, 245);
-      text-shadow: -9px 13px 8px rgba(0, 0, 0, 1);
-      position: absolute;
-      left: 1rem;
-      top: 9rem;
-      & span {
-        color: #BDCEE2;
-        display: block;
-      }  
-    }
-    &__infos {
-      position: absolute;
-      right: 0rem;
-      top: 10rem;
-      text-shadow: 13px 9px 8px rgba(0, 0, 0, 1);
-      color: #F0F4F5;
-      font-size: 2.5vw;
-      font-weight: bold;
-      padding: 0.5rem;
-      & span {
-        color: #BDCEE2;
-      }
-      & p {
-        margin-left: 0.2rem;
-      }
-    }
-  }
-}
+// @media (max-width: 450px ) {
+//   .header {
+//     height: 20rem;
+//     background-image: url('../../assets/bg.webp');
+//     background-position: 50% 100%;
+//     background-size: cover;
+//     position: relative;
+//     &__title {
+//       //font-size: 8vw;
+//       color: rgb(240, 244, 245);
+//       text-shadow: -9px 13px 8px rgba(0, 0, 0, 1);
+//       position: absolute;
+//       left: 1rem;
+//       top: 9rem;
+//       & span {
+//         color: #BDCEE2;
+//         display: block;
+//       }  
+//     }
+//     &__infos {
+//       position: absolute;
+//       right: 0rem;
+//       top: 10rem;
+//       text-shadow: 13px 9px 8px rgba(0, 0, 0, 1);
+//       color: #F0F4F5;
+//       //font-size: 2.5vw;
+//       font-weight: bold;
+//       padding: 0.5rem;
+//       & span {
+//         color: #BDCEE2;
+//       }
+//       & p {
+//         margin-left: 0.2rem;
+//       }
+//     }
+//   }
+// }
