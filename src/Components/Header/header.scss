@@ -2,13 +2,34 @@
   background-image: url('../../assets/bg.webp');
   background-position: bottom;
   background-size: cover;
-  justify-content: space-around;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10rem 0;
+  padding: 5rem 0;
+  height: 30rem;
+  &_text {
+    width: 90%;
+    transform: rotate(-2deg);
+    background-color: #BDCEE2;
+    justify-content: space-evenly;
+    display: flex;
+    margin: auto;
+    opacity: 0.9;
+    padding: 1rem;
+    position: relative;
+    border: 0.2em solid black;
+    border-radius: 5rem 14.5rem;
+    &::before {
+      content: '';
+      display: block;
+      background-color: black;
+      width: 97%;
+      position: absolute;
+      height: 90%;
+      z-index: -1;
+      border-radius: 2.5rem 5rem;
+    }
+  }
   &__title {
     display: none;
-    padding: 5rem 2rem;
+    // padding: 5rem 2rem;
     font-size: 7rem;
     color: rgb(240, 244, 245);
     text-shadow: -9px 13px 8px rgba(0, 0, 0, 1);
@@ -18,12 +39,15 @@
     }  
   }
   &__infos {
-    text-align: end;
-    padding-right: 2rem;
+    text-align: center;
     display: inline-block;
     text-shadow: 13px 9px 8px rgba(0, 0, 0, 1);
     color: #F0F4F5;
-    font-size: 2rem;
+    font-size: 1.5rem;
+
+    p {
+      margin: 0 0 1rem;
+    }
     & span {
       color: #BDCEE2;
     }
@@ -35,6 +59,10 @@
   .header {
     &__title {
       display: block;
+    }
+    &__infos {
+      text-align: end;
+      font-size: 2rem;
     }
   }
 }

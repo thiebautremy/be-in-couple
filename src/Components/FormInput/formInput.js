@@ -47,7 +47,6 @@ const FormInput = ({
           name="firstFirstName" 
           id="firstFirstName" 
           placeholder="1er Prénom"
-          className="formInput__form__input"
           required 
           value={firstFirstName}
           onChange={handleOnChange} 
@@ -57,7 +56,6 @@ const FormInput = ({
           name="secondFirstName" 
           id="secondFirstName"
           placeholder="2ième Prénom"
-          className="formInput__form__input"
           required
           value={secondFirstName}
           onChange={handleOnChange} 
@@ -68,7 +66,6 @@ const FormInput = ({
         type="date" 
         name="date" 
         id="date"
-        className="formInput__form__input"
         required
         value={date}
         onChange={handleOnChangeDate}
