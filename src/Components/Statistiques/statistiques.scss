@@ -10,11 +10,11 @@
   &__section {
     padding: 1.5rem;
     &__title {
-      font-size: 2.3em;
+      font-size: 2rem;
     }
     &__item {
-      font-size: 2em;
-      padding-left: 3rem;
+      font-size: 1.8rem;
+      padding-left: 1rem;
     }
     & span, & h1 {
       color: #BDCEE2;
@@ -24,11 +24,11 @@
     display: block;
     padding: 0.5rem;
     margin: 3rem 2rem auto auto;
-    width: 45%;
+    width: 15rem;
     height: 2.5rem;
-    font-size: 1.5em;
+    font-size: 100%;
     font-weight: bold;
-    border-radius: 0.2rem;
+    border-radius: 1.4rem;
     border: none;
     text-align: center;
     transition-property: background-color;
@@ -43,106 +43,106 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .statistiques {
-    &__section {
-      padding: 0.5rem;
-      &__title {
-        font-size: 1.8em;
-      }
-      &__item {
-        font-size: 1.4em;
-        padding-left: 3rem;
-      }
-      & span, & h1 {
-        color: #BDCEE2;
-      }
-    }
-    &__btn {
-      display: block;
-      padding: 0.5rem;
-      margin: 3rem 0rem auto auto;
-      width: 45%;
-      height: 2.5rem;
-      font-size: 1.5em;
-    }
-  }
-}
-@media (max-width: 750px) {
-  .statistiques {
-    &__section {
-      padding: 0.5rem;
-      &__title {
-        font-size: 1.5em;
-      }
-      &__item {
-        font-size: 1.1em;
-        padding-left: 2.5rem;
-      }
-      & span, & h1 {
-        color: #BDCEE2;
-      }
-    }
-    &__btn {
-      display: block;
-      padding: 0.5rem;
-      margin: 3rem 0rem auto auto;
-      width: 45%;
-      height: 2rem;
-      font-size: 1em;
-    }
-  }
-}
-@media (max-width: 600px) {
-  .statistiques {
-    &__section {
-      padding: 0.5rem;
-      &__title {
-        font-size: 1em;
-      }
-      &__item {
-        font-size: 0.8em;
-        padding-left: .5rem;
-      }
-      & span, & h1 {
-        color: #BDCEE2;
-      }
-    }
-    &__btn {
-      display: block;
-      padding: 0.5rem;
-      margin: 3rem 0rem auto auto;
-      width: 60%;
-      height: 2rem;
-      font-size: 0.8em;
-    }
-  }
-}
-@media (max-width: 400px) {
-  .statistiques {
-    &__section {
-      padding: 0.1rem;
-      &__title {
-        font-size: 0.8em;
-      }
-      &__item {
-        font-size: 0.6em;
-        padding-left: 0.1rem;
-      }
-      & span, & h1 {
-        color: #BDCEE2;
-      }
-    }
-    &__btn {
-      display: block;
-      padding: 0.5rem;
-      margin: 3rem 0rem auto auto;
-      width: 60%;
-      height: 2rem;
-      font-size: 0.8em;
-    }
-  }
-}
+// @media (max-width: 1000px) {
+//   .statistiques {
+//     &__section {
+//       padding: 0.5rem;
+//       &__title {
+//         // font-size: 1.8em;
+//       }
+//       &__item {
+//         // font-size: 1.4em;
+//         // padding-left: 3rem;
+//       }
+//       & span, & h1 {
+//         // color: #BDCEE2;
+//       }
+//     }
+//     &__btn {
+//       // display: block;
+//       // padding: 0.5rem;
+//       // margin: 3rem 0rem auto auto;
+//       // width: 45%;
+//       // height: 2.5rem;
+//       // font-size: 1.5em;
+//     }
+//   }
+// }
+// @media (max-width: 750px) {
+//   .statistiques {
+//     &__section {
+//       padding: 0.5rem;
+//       &__title {
+//         font-size: 1.5em;
+//       }
+//       &__item {
+//         font-size: 1.1em;
+//         padding-left: 2.5rem;
+//       }
+//       & span, & h1 {
+//         color: #BDCEE2;
+//       }
+//     }
+//     &__btn {
+//       display: block;
+//       padding: 0.5rem;
+//       margin: 3rem 0rem auto auto;
+//       width: 45%;
+//       height: 2rem;
+//       font-size: 1em;
+//     }
+//   }
+// }
+// @media (max-width: 600px) {
+//   .statistiques {
+//     &__section {
+//       padding: 0.5rem;
+//       &__title {
+//         font-size: 1em;
+//       }
+//       &__item {
+//         font-size: 0.8em;
+//         padding-left: .5rem;
+//       }
+//       & span, & h1 {
+//         color: #BDCEE2;
+//       }
+//     }
+//     &__btn {
+//       display: block;
+//       padding: 0.5rem;
+//       margin: 3rem 0rem auto auto;
+//       width: 60%;
+//       height: 2rem;
+//       font-size: 0.8em;
+//     }
+//   }
+// }
+// @media (max-width: 400px) {
+//   .statistiques {
+//     &__section {
+//       padding: 0.1rem;
+//       &__title {
+//         font-size: 0.8em;
+//       }
+//       &__item {
+//         font-size: 0.6em;
+//         padding-left: 0.1rem;
+//       }
+//       & span, & h1 {
+//         color: #BDCEE2;
+//       }
+//     }
+//     &__btn {
+//       display: block;
+//       padding: 0.5rem;
+//       margin: 3rem 0rem auto auto;
+//       width: 60%;
+//       height: 2rem;
+//       font-size: 0.8em;
+//     }
+//   }
+// }
 @keyframes fadein {
   from {
       opacity:0;
