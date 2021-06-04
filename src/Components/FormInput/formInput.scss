@@ -35,12 +35,11 @@
   }
   &__form {
     &__inputs {
-      padding: 1.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: row;
-      margin: 2rem auto;
+      margin: 4rem auto;
       width: 80%;
     }
     input {
@@ -68,7 +67,7 @@
       }
     }
     input[type='date'] {
-      margin: 2rem auto;
+      margin: 4rem auto;
     }
     &__submit {
       margin-top: 2rem;
