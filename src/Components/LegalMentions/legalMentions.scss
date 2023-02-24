@@ -1,30 +1,29 @@
 .legalMentions {
-  background: linear-gradient( 180deg, rgb(0, 0, 0) 0%, rgb(0,51,102) 86%, rgb(0,51,102) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 51, 102) 86%,
+    rgb(0, 51, 102) 100%
+  );
   position: relative;
   z-index: 1;
   padding: 5rem 1rem;
   margin: auto;
-  &__particles {
-    position: absolute;
-    width: 100%;
-    top:0;
-    left:0;
-    z-index:2;
-  }
-  & article, button {
+  & article,
+  button {
     position: relative;
     z-index: 3;
   }
   & h1 {
-    color: #66A599;
+    color: #66a599;
   }
   & h2 {
     margin-left: 2rem;
-    color: #66A599;
+    color: #66a599;
   }
   & p {
     margin-left: 3rem;
-    color: #BDCEE2;
+    color: #bdcee2;
   }
   & button {
     display: block;
@@ -42,9 +41,9 @@
     transition-timing-function: ease-in-out;
     &:hover {
       background-color: transparent;
-      color: #BDCEE2;
+      color: #bdcee2;
       cursor: pointer;
-      border: 1px solid #BDCEE2;
+      outline: 1px solid #bdcee2;
     }
   }
 }

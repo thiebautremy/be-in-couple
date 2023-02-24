@@ -1,7 +1,7 @@
 .statistiques {
   position: relative;
   z-index: 3;
-  color: #66A599;
+  color: #66a599;
   margin: auto;
   animation: fadein 3s;
   -moz-animation: fadein 3s; /* Firefox */
@@ -16,8 +16,9 @@
       font-size: 1.8rem;
       padding-left: 1rem;
     }
-    & span, & h1 {
-      color: #BDCEE2;
+    & span,
+    & h1 {
+      color: #bdcee2;
     }
   }
   &__btn {
@@ -36,9 +37,9 @@
     transition-timing-function: ease-in-out;
     &:hover {
       background-color: transparent;
-      color: #BDCEE2;
+      color: #bdcee2;
       cursor: pointer;
-      border: 1px solid #BDCEE2;
+      outline: 1px solid #bdcee2;
     }
   }
 }
@@ -145,33 +146,36 @@
 // }
 @keyframes fadein {
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-moz-keyframes fadein { /* sur Firefox */
+@-moz-keyframes fadein {
+  /* sur Firefox */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-o-keyframes fadein { /* sur Opera */
+@-o-keyframes fadein {
+  /* sur Opera */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
