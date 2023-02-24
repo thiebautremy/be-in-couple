@@ -62,7 +62,7 @@
       &:hover, &:focus {
         background-color: #d6dee7;
         cursor: pointer;
-        border: 1px solid #BDCEE2;
+        outline: 1px solid #BDCEE2;
         color: rgb(44, 37, 37);
       }
     }
@@ -88,7 +88,7 @@
           background-color: transparent;
           color: rgb(241, 241, 22);
           cursor: pointer;
-          border: 1px solid #BDCEE2;
+          outline: 1px solid #BDCEE2;
         }
       }
     }
